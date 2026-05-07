@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lesson-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lesson-app
+  template:
+    metadata:
+      labels:
+        app: lesson-app
+    spec:
+      containers:
+        - name: lesson-app
+          image: 165749212250.dkr.ecr.ap-northeast-2.amazonaws.com/lesson-app:1
+          ports:
+            - containerPort: 80
