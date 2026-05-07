@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: lesson-app
-          image: 165749212250.dkr.ecr.ap-northeast-2.amazonaws.com/lesson-app:1
+          image: 165749212250.dkr.ecr.ap-northeast-2.amazonaws.com/lesson-app:2
           ports:
             - containerPort: 80
